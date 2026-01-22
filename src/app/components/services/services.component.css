@@ -1,0 +1,68 @@
+.services-section {
+  padding: 40px 20px;
+  background-color: var(--bg-color);
+}
+
+h2 {
+  color: var(--text-white);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  border-left: 3px solid var(--primary-gold);
+  padding-left: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Responsivo automático */
+  gap: 15px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--primary-gold); /* Fica dourado ao passar o mouse */
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--text-gray); /* Ícone cinza igual na imagem */
+  border: 1px solid #444;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  margin: 0 auto 15px auto; /* Centraliza */
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--text-white);
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin-bottom: 15px;
+}
+
+.price {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-gray);
+}
+
+.price strong {
+  font-size: 1.2rem;
+  color: var(--text-white);
+}

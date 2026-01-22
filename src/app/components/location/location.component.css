@@ -1,0 +1,51 @@
+.map-container {
+  background-color: #121212; /* Fundo escuro */
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: #c5a059; /* Dourado */
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.map-frame {
+  max-width: 800px; /* Não deixa ficar gigante em telas grandes */
+  margin: 0 auto;   /* Centraliza */
+  border: 2px solid #c5a059; /* Borda dourada em volta do mapa */
+  border-radius: 10px; /* Cantos arredondados */
+  overflow: hidden; /* Garante que o mapa não "vaze" das bordas redondas */
+}
+
+iframe {
+  display: block; /* Remove espaços brancos estranhos */
+  width: 100%;    /* Ocupa toda a largura disponível */
+}
+
+.address-info {
+  margin-top: 20px;
+}
+
+.address-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.btn-rota {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #c5a059;
+  transition: 0.3s;
+}
+
+.btn-rota:hover {
+  background-color: #c5a059;
+  color: black;
+}

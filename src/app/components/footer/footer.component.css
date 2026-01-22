@@ -1,0 +1,85 @@
+.footer-container {
+  background-color: #000000; /* Preto absoluto */
+  color: var(--text-gray);   /* Cinza claro */
+  padding: 40px 20px 20px 20px;
+  border-top: 2px solid var(--primary-gold); /* Linha dourada de acabamento */
+  margin-top: auto;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  /* Cria colunas automáticas: no PC fica lado a lado, no celular empilha */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--primary-gold);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+h4 {
+  color: var(--text-white);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.est {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--text-white);
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Botão do GPS */
+.btn-map {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: 1px solid var(--text-gray);
+  border-radius: 5px;
+  color: var(--text-white);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-map:hover {
+  background-color: var(--primary-gold);
+  color: #000;
+  border-color: var(--primary-gold);
+}
+
+.insta-link {
+  color: var(--text-white);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.insta-link:hover {
+  color: var(--primary-gold);
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.75rem;
+}
+
+.dev-credit strong {
+  color: var(--primary-gold);
+  cursor: pointer;
+}
