@@ -83,3 +83,35 @@ h4 {
   color: var(--primary-gold);
   cursor: pointer;
 }
+
+/* Estilo da Lista de Horários */
+.hours ul {
+  list-style: none; /* Tira as bolinhas da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.hours li {
+  display: flex;
+  justify-content: space-between; /* Joga o dia pra esquerda e a hora pra direita */
+  border-bottom: 1px solid #333; /* Linha fina para separar */
+  padding: 8px 0;
+  max-width: 250px; /* Limita a largura para não ficar muito esticado */
+  margin: 0 auto;   /* Centraliza a lista na coluna */
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.hours .day {
+  font-weight: bold;
+  color: var(--text-white);
+}
+
+.hours .time {
+  color: var(--primary-gold); /* Destaque dourado na hora */
+}
+
+.hours .closed {
+  color: #ff4d4d; /* Vermelho suave para "Fechado" */
+  font-size: 0.8rem;
+}
