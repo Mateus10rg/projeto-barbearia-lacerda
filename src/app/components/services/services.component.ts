@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // <--- Importante para listas funcionarem
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule], // <--- Adicionei aqui
+  imports: [CommonModule], 
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
 
-  // Lista organizada por categorias
+  // Lista organizada
   services = [
-    // --- OS CAMPEÕES ---
     { 
       name: 'Corte de Cabelo', 
       price: 'R$ 35,00', 
