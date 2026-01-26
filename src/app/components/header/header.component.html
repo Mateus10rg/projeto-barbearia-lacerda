@@ -2,7 +2,7 @@
   <div class="container">
     
     <div class="logo">
-      <a href="#home" (click)="closeMenu()">BARBEARIA | <span class="gold">LACERDA</span></a>
+      <a href="#home" (click)="scrollTo('home')">BARBEARIA | <span class="gold">LACERDA</span></a>
     </div>
 
     <nav class="desktop-nav">
@@ -23,6 +23,7 @@
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
     </button>
 
   </div>
@@ -30,13 +31,16 @@
 
 <div class="mobile-overlay" [class.open]="isMenuOpen">
   <nav class="mobile-nav">
-    <a href="#home" (click)="closeMenu()">Home</a>
-    <a href="#servicos" (click)="closeMenu()">Preços</a>
-    <a href="#precos" (click)="closeMenu()">Planos</a>
-    <a href="#localizacao" (click)="closeMenu()">Localização</a>
+    
+    <a (click)="scrollTo('home')">Home</a>
+    <a (click)="scrollTo('precos')">Preços</a>
+    <a (click)="scrollTo('planos')">Planos</a> 
+    <a (click)="scrollTo('produtos')">Produtos</a>
+    <a (click)="scrollTo('localizacao')">Localização</a>
     
     <a href="https://www.simplesagenda.com.br/agendamento_m.php?id=d0a11ee8b22025107a90abfa49566d28" target="_blank" class="btn-mobile-cta">
       AGENDAR HORÁRIO
     </a>
+
   </nav>
 </div>
