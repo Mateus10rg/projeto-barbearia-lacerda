@@ -78,15 +78,49 @@ export class ServicesComponent {
 
   plans = [
     { 
-      name: 'Plano Básico',
-      price: 'R$ 90,00/mês',
-      description: 'Inclui 2 cortes de cabelo e 1 barba por mês.'
+      name: 'Plano Estilo',
+      price: 'R$ 120,00/mês',
+      description: 'Para quem exige o corte sempre na régua. Cortes ilimitados durante o mês.'
     },
     {
-      name: 'Plano Premium',
-      price: 'R$ 150,00/mês',
-      description: 'Inclui 4 cortes de cabelo, 2 barbas e 1 hidratação por mês.'
+      name: 'Plano Lenhador',
+      price: 'R$ 170,00/mês',
+      description: 'O combo clássico. Cabelo e barba alinhados toda semana.'
+    },
+    {
+      name: 'Plano Vip',
+      price: 'R$ 190,00/mês',
+      description: 'Visual completo. Inclui corte, barba e o design de sobrancelha.'
+    },
+    {
+      name: 'Plano Presidente',
+      price: 'R$ 220,00/mês',
+      description: 'A experiência máxima. Corte, barba, sobrancelha e hidratação para manter os fios saudáveis.'
     }
   ];
+
+  product = [
+    { 
+      name: 'Pomada Modeladora',
+      price: 'R$ 25,00',
+      description: 'Fixação forte com acabamento natural.'
+    },
+    {
+      name: 'Perfumes',
+      price: 'A partir de R$ 70,00',
+      description: 'Variedade de fragrâncias masculinas.'
+    },
+    { 
+      name: 'Shampoo Anticaspa',
+      price: 'R$ 30,00 cada',
+      description: 'Produtos de alta qualidade para cuidados diários.'
+    },
+    {
+      name: 'Máscara de Hidratação',
+      price: 'R$ 35,00 cada',
+      description: 'Hidratação profunda para cabelos ressecados.'
+    }
+  ];
+
 
 }
