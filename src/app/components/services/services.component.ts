@@ -76,28 +76,37 @@ export class ServicesComponent {
     }
   ];
 
-  plans = [
-    { 
-      name: 'Plano Estilo',
-      price: 'R$ 120,00/mês',
-      description: 'Para quem exige o corte sempre na régua. Cortes ilimitados durante o mês.'
-    },
-    {
-      name: 'Plano Lenhador',
-      price: 'R$ 170,00/mês',
-      description: 'O combo clássico. Cabelo e barba alinhados toda semana.'
-    },
-    {
-      name: 'Plano Vip',
-      price: 'R$ 190,00/mês',
-      description: 'Visual completo. Inclui corte, barba e o design de sobrancelha.'
-    },
-    {
-      name: 'Plano Presidente',
-      price: 'R$ 220,00/mês',
-      description: 'A experiência máxima. Corte, barba, sobrancelha e hidratação para manter os fios saudáveis.'
-    }
-  ];
+  // Lista dos Planos Mensais
+plans = [
+  {
+    name: 'PLANO ESTILO',
+    price: 'R$ 120,00',
+    frequency: '/mês',
+    features: ['Corte Ilimitado'],
+    recommended: false
+  },
+  {
+    name: 'PLANO LENHADOR',
+    price: 'R$ 170,00',
+    frequency: '/mês',
+    features: ['Corte Ilimitado', 'Barba Ilimitada'],
+    recommended: true // Esse vai ficar destacado
+  },
+  {
+    name: 'PLANO VIP',
+    price: 'R$ 190,00',
+    frequency: '/mês',
+    features: ['Corte Ilimitado', 'Barba Ilimitada', 'Sobrancelha'],
+    recommended: false
+  },
+  {
+    name: 'PLANO PRESIDENTE',
+    price: 'R$ 220,00',
+    frequency: '/mês',
+    features: ['Corte', 'Barba', 'Sobrancelha', 'Hidratação'],
+    recommended: false
+  }
+];
 
   product = [
     { 
@@ -121,6 +130,4 @@ export class ServicesComponent {
       description: 'Hidratação profunda para cabelos ressecados.'
     }
   ];
-
-
 }

@@ -23,35 +23,40 @@
   </div>
 </section>
   
-<section class="services-section" id="servicos">
-  <div class="container">
-    
-    <div class="section-header" data-aos="fade-up">
-      <h2>CLUBE LACERDA</h2>
-      <p>Pague uma vez, venha quantas vezes quiser. (Seg a Qui) exceto feriados</p>
-    </div>
+<hr class="separator" style="border-color: #333; margin: 60px 0;">
 
-    <div class="services-grid">
-      
-      <div class="service-card" *ngFor="let plan of plans; let i = index" 
-           data-aos="fade-up" 
-           [attr.data-aos-delay]="i * 100"> <div class="card-top">
-          <h3>{{ plan.name }}</h3>
-          <span class="price">{{ plan.price }}</span>
-        </div>
-        
-        <p class="description">{{ plan.description }}</p>
-        
+<div class="section-header" data-aos="fade-up" id="precos">
+  <h2>CLUBE DE ASSINATURA</h2>
+  <p>Mantenha o visual sempre em dia pagando um valor fixo.</p>
+</div>
+
+<div class="plans-grid">
+  <div class="plan-card" *ngFor="let plan of plans" [class.highlight]="plan.recommended" data-aos="flip-left">
+    
+    <div class="plan-header">
+      <h3>{{ plan.name }}</h3>
+      <div class="plan-price">
+        <span class="currency">R$</span>
+        <span class="value">{{ plan.price.replace('R$ ', '').replace(',00', '') }}</span>
+        <span class="freq">/mês</span>
       </div>
-
     </div>
+
+    <ul class="plan-features">
+      <li *ngFor="let feature of plan.features">✅ {{ feature }}</li>
+      <li class="rule">⚠️ Seg. a Quinta (exceto feriados)</li>
+    </ul>
+
+    <a href="https://wa.me/5561999999999?text=Quero+assinar+o+{{plan.name}}" target="_blank" class="btn-plan">
+      QUERO ASSINAR
+    </a>
   </div>
-</section>
+</div>
 
 <section class="services-section" id="servicos">
   <div class="container">
     
-    <div class="section-header" data-aos="fade-up">
+    <div class="section-header" data-aos="fade-up" id="produtos">
       <h2>PRODUTOS</h2>
       <p>Invista na sua imagem com quem entende.</p>
     </div>

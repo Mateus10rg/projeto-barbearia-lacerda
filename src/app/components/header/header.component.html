@@ -1,12 +1,41 @@
-<header>
+<header class="header">
   <div class="container">
-    <div class="logo-area">
-      <img src="/images/logo.png" alt="Logo Lacerda" class="logo-img">
-      <span class="brand-name">Barbearia Lacerda</span>
-    </div>
     
-    <a href="http://www.simplesagenda.com.br/agendamento_m.php?id=d0a11ee8b22025107a90abfa49566d28" target="_blank" class="btn-header">
-      Agendar Agora
-    </a>
+    <div class="logo">
+      <a href="#home" (click)="closeMenu()">BARBEARIA | <span class="gold">LACERDA</span></a>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Preços</a></li>
+        <li><a href="#precos">Planos</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+    </nav>
+
+    <div class="cta-header desktop-only">
+      <a href="https://wa.me/5561999999999" target="_blank" class="btn-gold">AGENDAR</a>
+    </div>
+
+    <button class="mobile-menu-btn" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </div>
 </header>
+
+<div class="mobile-overlay" [class.open]="isMenuOpen">
+  <nav class="mobile-nav">
+    <a href="#home" (click)="closeMenu()">Home</a>
+    <a href="#precos" (click)="closeMenu()">Preços</a>
+    <a href="#precos" (click)="closeMenu()">Planos</a>
+    <a href="#localizacao" (click)="closeMenu()">Localização</a>
+    
+    <a href="https://wa.me/5561999999999" target="_blank" class="btn-mobile-cta">
+      AGENDAR HORÁRIO
+    </a>
+  </nav>
+</div>

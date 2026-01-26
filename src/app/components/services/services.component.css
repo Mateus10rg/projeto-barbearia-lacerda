@@ -86,3 +86,81 @@
     grid-template-columns: 1fr; /* Uma coluna só no celular */
   }
 }
+
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.plan-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 30px;
+  width: 260px; /* Largura fixa para ficarem iguais */
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Destaque para o plano recomendado */
+.plan-card.highlight {
+  border: 2px solid #c5a059;
+  transform: scale(1.05); /* Fica um pouco maior */
+  background: #222;
+}
+
+.plan-header h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.plan-price .value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c5a059;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.plan-features .rule {
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.btn-plan {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #c5a059;
+  color: #c5a059;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.plan-card:hover .btn-plan, 
+.plan-card.highlight .btn-plan {
+  background-color: #c5a059;
+  color: #000;
+}
