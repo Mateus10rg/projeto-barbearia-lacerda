@@ -1,68 +1,88 @@
+/* Container Principal */
 .services-section {
-  padding: 40px 20px;
-  background-color: var(--bg-color);
+  background-color: #111; /* Fundo quase preto */
+  padding: 80px 20px;
+  color: #fff;
 }
 
-h2 {
-  color: var(--text-white);
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  border-left: 3px solid var(--primary-gold);
-  padding-left: 10px;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Responsivo automático */
-  gap: 15px;
-}
-
-.card {
-  background-color: var(--card-bg);
-  padding: 20px;
-  border-radius: 10px;
+/* Título */
+.section-header {
   text-align: center;
-  border: 1px solid #333;
-  transition: transform 0.2s;
+  margin-bottom: 50px;
 }
 
-.card:hover {
-  border-color: var(--primary-gold); /* Fica dourado ao passar o mouse */
-  transform: translateY(-5px);
-}
-
-.icon {
+.section-header h2 {
+  color: #c5a059; /* Dourado Lacerda */
   font-size: 2rem;
   margin-bottom: 10px;
-  color: var(--text-gray); /* Ícone cinza igual na imagem */
-  border: 1px solid #444;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 5px;
-  margin: 0 auto 15px auto; /* Centraliza */
+  letter-spacing: 2px;
 }
 
-.card h3 {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: var(--text-white);
+.section-header p {
+  color: #888;
 }
 
-.card p {
-  font-size: 0.8rem;
-  color: var(--text-gray);
-  margin-bottom: 15px;
+/* O Grid (Organiza os cards na tela) */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo automático */
+  gap: 20px;
+}
+
+/* O Cartão do Serviço */
+.service-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.service-card:hover {
+  transform: translateY(-5px); /* Sobe um pouquinho */
+  border-color: #c5a059; /* Borda fica dourada */
+}
+
+/* Topo do Card (Nome e Preço) */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.card-top h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
 }
 
 .price {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--text-gray);
+  color: #c5a059;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.price strong {
-  font-size: 1.2rem;
-  color: var(--text-white);
+/* Descrição cinza */
+.description {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Uma coluna só no celular */
+  }
 }

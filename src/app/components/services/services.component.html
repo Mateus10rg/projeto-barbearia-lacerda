@@ -1,37 +1,49 @@
-<section class="services-section">
-  <h2>NOSSOS SERVIÇOS</h2>
-  
-  <div class="grid-container">
-    <div class="card" data-aos="fade-right" data-aos-delay="100">
-      <div class="icon">✂️</div> <h3>Corte Masculino</h3>
-      <p>Corte na tesoura ou máquina</p>
-      <span class="price">A partir de <br> <strong>R$ 25,00</strong></span>
+<section class="services-section" id="servicos">
+  <div class="container">
+    
+    <div class="section-header" data-aos="fade-up">
+      <h2>TABELA DE PREÇOS</h2>
+      <p>Invista na sua imagem com quem entende.</p>
     </div>
 
-    <div class="card" data-aos="fade-right" data-aos-delay="300">
-      <div class="icon">🪒</div>
-      <h3>Barba</h3>
-      <p>Toalha quente e navalha</p>
-      <span class="price">A partir de <br> <strong>R$ 25,00</strong></span>
-    </div>
+    <div class="services-grid">
+      
+      <div class="service-card" *ngFor="let service of services; let i = index" 
+           data-aos="fade-up" 
+           [attr.data-aos-delay]="i * 100"> <div class="card-top">
+          <h3>{{ service.name }}</h3>
+          <span class="price">{{ service.price }}</span>
+        </div>
+        
+        <p class="description">{{ service.description }}</p>
+        
+      </div>
 
-    <div class="card" data-aos="fade-right" data-aos-delay="500">
-      <div class="icon">🌿</div>
-      <h3>Limpeza de Pele</h3>
-      <p>Remoção de cravos e impurezas</p>
-      <span class="price">A partir de <br> <strong>R$ 25,00</strong></span>
     </div>
   </div>
 </section>
   
-<section class="services-section">
-  <h2>NOSSOS PLANOS</h2>
-  <div class="grid-container">
-    <div class="card" data-aos="fade-left" data-aos-delay="100">
-      <div class="icon">💈</div>
-      <h3>Plano Mensal</h3>
-      <p>Cortes Ilimitados <br>Atendimento Premium, <br>Ambiente exclusivo.</p>
-      <span class="price"><strong>A partir de R$ 120,00</strong></span>
+<section class="services-section" id="servicos">
+  <div class="container">
+    
+    <div class="section-header" data-aos="fade-up">
+      <h2>PLANOS</h2>
+      <p>Invista na sua imagem com quem entende.</p>
+    </div>
+
+    <div class="services-grid">
+      
+      <div class="service-card" *ngFor="let plan of plans; let i = index" 
+           data-aos="fade-up" 
+           [attr.data-aos-delay]="i * 100"> <div class="card-top">
+          <h3>{{ plan.name }}</h3>
+          <span class="price">{{ plan.price }}</span>
+        </div>
+        
+        <p class="description">{{ plan.description }}</p>
+        
+      </div>
+
     </div>
   </div>
 </section>

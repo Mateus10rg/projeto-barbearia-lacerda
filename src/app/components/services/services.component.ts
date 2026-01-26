@@ -1,12 +1,92 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // <--- Importante para listas funcionarem
 
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], // <--- Adicionei aqui
   templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+  styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
+
+  // Lista organizada por categorias
+  services = [
+    // --- OS CAMPEÕES ---
+    { 
+      name: 'Corte de Cabelo', 
+      price: 'R$ 35,00', 
+      description: 'Do social ao degradê na régua. Acabamento premium.' 
+    },
+    { 
+      name: 'Barba', 
+      price: 'R$ 30,00', 
+      description: 'Ritual com toalha quente e navalha afiada.' 
+    },
+    { 
+      name: 'Corte Infantil', 
+      price: 'R$ 35,00', 
+      description: 'Cuidado especial e paciência para os pequenos.' 
+    },
+
+    // --- ACABAMENTOS ---
+    { 
+      name: 'Pezinho', 
+      price: 'R$ 15,00', 
+      description: 'Manutenção do contorno para o corte durar mais.' 
+    },
+    { 
+      name: 'Sobrancelhas', 
+      price: 'R$ 15,00', 
+      description: 'Design masculino, limpo e natural.' 
+    },
+
+    // --- TRATAMENTO ---
+    { 
+      name: 'Limpeza de Pele', 
+      price: 'R$ 60,00', 
+      description: 'Remoção de cravos e impurezas do rosto.' 
+    },
+    { 
+      name: 'Hidratação', 
+      price: 'R$ 25,00', 
+      description: 'Recuperação dos fios e brilho intenso.' 
+    },
+
+    // --- QUÍMICA & ESTILO ---
+    { 
+      name: 'Alisamento', 
+      price: 'R$ 40,00', 
+      description: 'Redução de volume com aspecto natural.' 
+    },
+    { 
+      name: 'Progressiva', 
+      price: 'R$ 70,00', 
+      description: 'Liso perfeito e duradouro.' 
+    },
+    { 
+      name: 'Luzes', 
+      price: 'R$ 120,00', 
+      description: 'Iluminação moderna para destacar o corte.' 
+    },
+    { 
+      name: 'Nevou (Platinado)', 
+      price: 'R$ 180,00', 
+      description: 'Descoloração global com proteção aos fios.' 
+    }
+  ];
+
+  plans = [
+    { 
+      name: 'Plano Básico',
+      price: 'R$ 90,00/mês',
+      description: 'Inclui 2 cortes de cabelo e 1 barba por mês.'
+    },
+    {
+      name: 'Plano Premium',
+      price: 'R$ 150,00/mês',
+      description: 'Inclui 4 cortes de cabelo, 2 barbas e 1 hidratação por mês.'
+    }
+  ];
 
 }
