@@ -2,5 +2,8 @@
   "version": 2,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ], 
+  "redirects": [
+    { "source": "agenda", "destination": "https://www.simplesagenda.com.br/agendamento_m.php?id=d0a11ee8b22025107a90abfa49566d28", "permanent": false }
   ]
 }
