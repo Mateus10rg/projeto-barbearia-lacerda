@@ -86,21 +86,21 @@ plans = [
     name: 'PLANO ESTILO',
     price: 'R$ 69,90',
     frequency: '/mês',
-    features: ['Corte Ilimitado'],
+    features: ['CORTE ILIMITADO'],
     recommended: false
   },
   {
     name: 'PLANO BARBA',
     price: 'R$ 94,90',
     frequency: '/mês',
-    features: ['Barba Ilimitada',],
+    features: ['BARBA ILIMITADA',],
     recommended: false
   },
   {
     name: 'PLANO LENHADOR',
     price: 'R$ 134,90',
     frequency: '/mês',
-    features: ['Corte Ilimitado', 'Barba Ilimitada'],
+    features: ['CORTE ILIMITADO', 'BARBA ILIMITADA'],
     recommended: true // Esse vai ficar destacado
   },
 ];
