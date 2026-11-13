@@ -51,6 +51,11 @@ export class ServicesComponent {
       price: 'R$ 25,00', 
       description: 'Recuperação dos fios e brilho intenso.' 
     },
+    { 
+      name: 'Pigmentação', 
+      price: 'R$ 30,00', 
+      description: 'Realçar o corte, discar e cobrir falhas.' 
+    },
 
     // --- QUÍMICA & ESTILO ---
     { 
@@ -79,32 +84,25 @@ export class ServicesComponent {
 plans = [
   {
     name: 'PLANO ESTILO',
-    price: 'R$ 120,00',
+    price: 'R$ 69,90',
     frequency: '/mês',
     features: ['Corte Ilimitado'],
     recommended: false
   },
   {
+    name: 'PLANO BARBA',
+    price: 'R$ 94,90',
+    frequency: '/mês',
+    features: ['Barba Ilimitada',],
+    recommended: false
+  },
+  {
     name: 'PLANO LENHADOR',
-    price: 'R$ 170,00',
+    price: 'R$ 134,90',
     frequency: '/mês',
     features: ['Corte Ilimitado', 'Barba Ilimitada'],
     recommended: true // Esse vai ficar destacado
   },
-  {
-    name: 'PLANO VIP',
-    price: 'R$ 190,00',
-    frequency: '/mês',
-    features: ['Corte Ilimitado', 'Barba Ilimitada', 'Sobrancelha'],
-    recommended: false
-  },
-  {
-    name: 'PLANO PRESIDENTE',
-    price: 'R$ 220,00',
-    frequency: '/mês',
-    features: ['Corte', 'Barba', 'Sobrancelha', 'Hidratação'],
-    recommended: false
-  }
 ];
 
   product = [
