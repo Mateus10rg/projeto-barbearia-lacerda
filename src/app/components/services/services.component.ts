@@ -23,6 +23,11 @@ export class ServicesComponent {
       description: 'Ritual com toalha quente e navalha afiada.' 
     },
     { 
+      name: 'Pigmentação', 
+      price: 'R$ 30,00', 
+      description: 'Realçar o corte, discar e cobrir falhas.' 
+    },
+    { 
       name: 'Corte Infantil', 
       price: 'R$ 35,00', 
       description: 'Cuidado especial e paciência para os pequenos.' 
@@ -50,11 +55,6 @@ export class ServicesComponent {
       name: 'Hidratação', 
       price: 'R$ 25,00', 
       description: 'Recuperação dos fios e brilho intenso.' 
-    },
-    { 
-      name: 'Pigmentação', 
-      price: 'R$ 30,00', 
-      description: 'Realçar o corte, discar e cobrir falhas.' 
     },
 
     // --- QUÍMICA & ESTILO ---
